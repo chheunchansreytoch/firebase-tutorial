@@ -1,0 +1,98 @@
+<div class="list-users-container">
+  <div class="customer-user">
+    <div class="create-btn">
+      <button routerLink="/add-user">Add User</button>
+    </div>
+
+    <div class="header-right">
+      <div class="search-container">
+        <input placeholder="Search User..." (change)="txtSearchChanged($event)">
+
+        <button mat-icon-button class="btn-search" (click)="btnSearchClicked()">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="custom-profile-image">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <img src="./assets/images/pf-image.jpg">
+        </button>
+        <mat-menu #menu="matMenu">
+          <div class="custom-element-inside">
+            <img class="img-inside-box" src="./assets/images/pf-image.jpg">
+            <div class="user-info">
+              <h4>Professor. Admin-Admin</h4>
+              <span>Name: Admin Admin</span>
+              <p>info@unknown.org</p>
+            </div>
+          </div>
+
+          <button mat-menu-item>
+            <i class="fas fa-key"></i>
+            <span>Change Password</span>
+          </button>
+          <button mat-menu-item>
+            <i class="fas fa-user-circle"></i>
+            <span>Change Username</span>
+          </button>
+          <button mat-menu-item>
+            <i class="fas fa-pen"></i>
+            <span>Edit Profile</span>
+          </button>
+          <button mat-menu-item (click)="onClickSignOut()">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Sign Out</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+
+  <h3>List all users</h3>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>N</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of userStore.data; let i =index">
+          <td>{{i+1}}</td>
+          <td>{{item.firstname}}</td>
+          <td>{{item.lastname}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.address.address}}</td>
+          <td>{{item.address.city}}</td>
+          <td>{{item.address.state}}</td>
+          <td>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item mat-button (click)="onClickEdit(item)">
+                <i class="fas fa-pen"></i>
+                <span>Edit</span>
+              </button>
+
+              <button mat-menu-item mat-button (click)="onClickDelete(item)">
+                <i class="fas fa-trash"></i>
+                <span>Delete</span>
+              </button>
+            </mat-menu>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <!-- <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div> -->
+</div>

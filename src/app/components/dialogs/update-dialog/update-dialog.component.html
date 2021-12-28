@@ -1,0 +1,52 @@
+<div class="update-form-container">
+  <h2 mat-dialog-title>Update User</h2>
+  <mat-dialog-content class="mat-typography">
+    <form [formGroup]="form" (ngSubmit)="updateUser(form)">
+      <div class="row1">
+        <div class="first-name">
+          <label>First Name</label>
+          <input type="text" name="firstname" formControlName="firstname">
+        </div>
+
+        <div class="last-name">
+          <label>Last Name</label>
+          <input type="text" name="lastname" formControlName="lastname">
+        </div>
+
+        <div class="email">
+          <label>Email</label>
+          <input type="text" formControlName="email">
+        </div>
+
+        <div formGroupName="address0">
+          <div class="address">
+            <label>Address</label>
+            <input type="text" name="address" formControlName="address">
+          </div>
+
+          <div class="city">
+            <label>City</label>
+            <input type="text" name="city" formControlName="city">
+          </div>
+
+          <div class="state">
+            <label>State</label>
+            <input type="text" name="state" formControlName="state">
+          </div>
+        </div>
+      </div>
+    </form>
+  </mat-dialog-content>
+
+  <div class="buttonClick1">
+    <div class="buttonClick2">
+      <div class="cancel">
+        <button class="cancle-btn" (click)="onClickCancel()">Cancel</button>
+      </div>
+
+      <div class="save">
+        <button class="save-btn" (click)="updateUser(form.value)">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+.delete-form-container {
+  h3{
+    text-align: center;
+  }
+
+  .custom-button1 {
+    .custom-button2 {
+      display: flex;
+      float: right;
+
+      .cancel {
+        float: left;
+        margin-right: 10px;
+
+        button {
+          border-radius: 5px;
+          color: white;
+          border: 1px solid red;
+          background-color: red;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 10px 20px;
+          transition: transform 80ms ease-in;
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        button:focus {
+          outline: none;
+        }
+
+        button.ghost {
+          background-color: transparent;
+          border-color: #FFFFFF;
+        }
+      }
+
+      .delete {
+        float: right;
+
+        button {
+          border-radius: 5px;
+          color: white;
+          border: 1px solid #696eb8;
+          background-color: #696eb8;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 10px 20px;
+          transition: transform 80ms ease-in;
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        button:focus {
+          outline: none;
+        }
+
+        button.ghost {
+          background-color: transparent;
+          border-color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+
+// .mat-dialog-content {
+//   display: block !important;
+
+// }
+
+.mat-dialog-content {
+  min-height: 10vh;
+}

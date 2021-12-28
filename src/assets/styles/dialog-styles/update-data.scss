@@ -1,0 +1,172 @@
+.update-form-container {
+  form {
+    position: static;
+    border-top: 1px solid #dee2e6;
+    .row1 {
+      margin-bottom: 20px;
+
+      .first-name {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 30px;
+        }
+      }
+
+      .last-name {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-top: 20px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 30px;
+        }
+      }
+
+      .email {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-top: 20px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 30px;
+        }
+      }
+
+      .address {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-top: 20px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 30px;
+        }
+      }
+
+      .city {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-top: 20px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 30px;
+        }
+      }
+
+      .state {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-top: 20px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+
+  .buttonClick1 {
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+
+    .buttonClick2 {
+      margin-top: 20px;
+      float: right;
+      display: flex;
+
+      .cancel {
+        float: left;
+        margin-right: 10px;
+
+        button {
+          border-radius: 5px;
+          color: white;
+          border: 1px solid red;
+          background-color: red;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 15px 20px;
+          transition: transform 80ms ease-in;
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        button:focus {
+          outline: none;
+        }
+
+        button.ghost {
+          background-color: transparent;
+          border-color: #FFFFFF;
+        }
+      }
+
+      .save {
+        float: right;
+
+        button {
+          border-radius: 5px;
+          color: white;
+          border: 1px solid #696eb8;
+          background-color: #696eb8;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 15px 20px;
+          transition: transform 80ms ease-in;
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        button:focus {
+          outline: none;
+        }
+
+        button.ghost {
+          background-color: transparent;
+          border-color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+.mat-dialog-content {
+  min-height: 80vh;
+}
+
+

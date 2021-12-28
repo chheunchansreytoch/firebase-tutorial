@@ -1,0 +1,230 @@
+.add-user-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f7f9;
+
+  .back-to-list {
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      margin: 10px;
+
+      .fa-angle-left {
+        font-size: 15px;
+        line-height: 2;
+      }
+    }
+  }
+
+  .sign-up-container {
+    position: absolute;
+    width: 400;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    // .search-container {
+    //   input {
+    //     padding: 10px 50px;
+    //   }
+    // }
+
+    form {
+      background: #f8f9fa;
+      padding: 25px;
+
+      .name {
+        display: flex;
+        justify-content: space-between;
+
+        .first-name {
+          display: flex;
+          flex-direction: column;
+          float: left;
+          margin-right: 20px;
+          margin-top: 15px;
+
+          label {
+            font-size: 12px;
+          }
+
+          input {
+            padding: 10px 20px;
+            border: 1px solid black;
+            outline: none;
+            border-radius: 5px;
+          }
+
+          input:focus {
+            border: 1px solid #4895ef;
+            box-shadow: 0 0 3px #4895ef;
+          }
+        }
+
+        .last-name {
+          display: flex;
+          flex-direction: column;
+          float: right;
+          margin-top: 15px;
+
+          label {
+            font-size: 12px;
+          }
+
+          input {
+            padding: 10px 20px;
+            border: 1px solid black;
+            outline: none;
+            border-radius: 5px;
+          }
+
+          input:focus {
+            border: 1px solid #4895ef;
+            box-shadow: 0 0 3px #4895ef;
+          }
+        }
+      }
+
+      .email-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 20px;
+          border: 1px solid black;
+          outline: none;
+          border-radius: 5px;
+        }
+
+        input:focus {
+          border: 1px solid #4895ef;
+          box-shadow: 0 0 3px #4895ef;
+        }
+      }
+
+      .password-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 20px;
+          border: 1px solid black;
+          outline: none;
+          border-radius: 5px;
+        }
+
+        input:focus {
+          border: 1px solid #4895ef;
+          box-shadow: 0 0 3px #4895ef;
+        }
+      }
+
+      .address-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          padding: 10px 20px;
+          border: 1px solid black;
+          outline: none;
+          border-radius: 5px;
+        }
+
+        input:focus {
+          border: 1px solid #4895ef;
+          box-shadow: 0 0 3px #4895ef;
+        }
+      }
+
+      .city-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        label {
+          font-size: 13px;
+        }
+
+        input {
+          padding: 10px 20px;
+          border: 1px solid black;
+          outline: none;
+          border-radius: 5px;
+        }
+
+        input:focus {
+          border: 1px solid #4895ef;
+          box-shadow: 0 0 3px #4895ef;
+        }
+      }
+
+      .state-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        label {
+          font-size: 13px;
+        }
+
+        input {
+          padding: 10px 20px;
+          border: 1px solid black;
+          outline: none;
+          border-radius: 5px;
+        }
+
+        input:focus {
+          border: 1px solid #4895ef;
+          box-shadow: 0 0 3px #4895ef;
+        }
+      }
+
+      .submit {
+        text-align: center;
+        button {
+          //align-items: center;
+          border-radius: 20px;
+          border: 1px solid #4895ef;
+          background-color: #4895ef;
+          color: #FFFFFF;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 12px 25px;
+          letter-spacing: 1px;
+          //text-transform: uppercase;
+          transition: transform 80ms ease-in;
+          margin-top: 15px;
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        button:focus {
+          outline: none;
+        }
+
+        button.ghost {
+          background-color: transparent;
+          border-color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.customer-signIn {
+  background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/219190/e55792284de76396d1213b59d68ff8fb09a05eeb.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .sign-in-container {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    form {
+      background: rgba(black, 0.5);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: #fff;
+      }
+
+      .email-container {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-right: 20px;
+        margin-top: 15px;
+
+        label {
+          font-size: 12px;
+          color: #fff;
+        }
+
+        input {
+          width: 350px;
+          padding: 10px 15px;
+          border: 1px solid black;
+          color: #fff;
+          outline: none;
+          border-radius: 5px;
+          background: rgba(#adb5bd, 0.5);
+        }
+
+        input:focus {
+          border: 1px solid #fff;
+          box-shadow: 0 0 3px #fff;
+        }
+
+        p{
+          text-align: right;
+          margin-right: -17px;
+          color: red;
+          font-size: 11px;
+        }
+      }
+
+      .password-container {
+        display: flex;
+        flex-direction: column;
+        // float: left;
+        // margin-right: 20px;
+        // margin-top: 15px;
+
+        label {
+          font-size: 12px;
+          color: #fff;
+          margin-top: 20px;
+        }
+
+        input {
+          width: 350px;
+          padding: 10px 15px;
+          border: 1px solid black;
+          color: #fff;
+          outline: none;
+          border-radius: 5px;
+          background: rgba(#adb5bd, 0.5);
+        }
+
+        input:focus {
+          border: 1px solid #fff;
+          box-shadow: 0 0 3px #fff;
+        }
+
+        p{
+          text-align: right;
+          margin-right: 1px;
+          color: red;
+          font-size: 11px;
+        }
+      }
+
+      .bottom-form {
+        display: flex;
+        justify-content: space-between;
+        .register-container {
+          margin-top: 20px;
+        }
+
+        .btn-submit {
+          text-align: center;
+          button {
+            //align-items: center;
+            border-radius: 20px;
+            border: 1px solid #FF4B2B;
+            background-color: #FF4B2B;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+            margin-top: 15px;
+          }
+
+          button:active {
+            transform: scale(0.95);
+          }
+
+          button:focus {
+            outline: none;
+          }
+
+          button.ghost {
+            background-color: transparent;
+            border-color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
